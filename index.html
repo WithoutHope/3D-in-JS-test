@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<title>3D, možná</title>
+</head>
+<body id="body">
+	<p>X</p>
+	<input type="range" min="0" max="1000" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inX" />
+	<p>Y</p>
+	<input type="range" min="0" max="1000" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inY" />
+	<p>Z (vzdálenost v prostoru)</p>
+	<input type="range" min="0" max="1000" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inZ" />
+	<p>Size</p>
+	<input type="range" min="0" max="1000" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inS" />
+	<p>zFactorX ("rotace" x)</p>
+	<input type="range" min="-100" max="100" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inZFX" />
+	<p>zFactorY ("rotace" y)</p>
+	<input type="range" min="-100" max="100" OnMouseMove="polyBender()" ontouchmove="polyBender()" id="inZFY" />
+	<svg height="210" width="500">
+		<circle cx="100" cy="100" r="2" fill="black" />
+		<polygon id="poly1" style="fill:lime;stroke:purple;stroke-width:1" />
+		<polygon id="poly2" style="fill:purple;stroke:lime;stroke-width:1" />
+	</svg>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
